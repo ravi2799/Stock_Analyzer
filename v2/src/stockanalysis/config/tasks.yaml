@@ -1,0 +1,85 @@
+# Task 1: Fetch stock data
+task1:
+  description: >
+    """
+        Your task is to fetch the stock price data for the given ticker symbol {ticker} over the past {information_range} period 
+        from {analysis_date}. The data should include the following: 
+        \n1. Opening Price\n2. Closing Price\n3. Highest Price\n4. Lowest Price\n5. Volume of shares traded 
+        Make sure the data is accurate and comes from a trusted source such as Yahoo Finance or Google Finance. 
+        If any data processing or complex calculations are required, delegate the task to the Python Data Analyst.
+
+    """
+  expected_output: >
+    """
+        A table containing the stock price data for {ticker} from {analysis_date} over the past {information_range}, 
+        including opening, closing, highest, lowest prices, and volume traded.
+    """
+
+# Task 2: Analyze stock data
+task2:
+  description: >
+        You are tasked with analyzing the stock data fetched by the previous agent for the stock ticker {ticker} 
+        over the past {information_range} from {analysis_date}. Your analysis should cover the following aspects: 
+        1. Identify any significant price movements (e.g., large price increases or decreases).
+        2. Analyze the overall trend of the stock during this period.
+        3. Compare the stock's performance over this range to prior performance if available.
+        4. Provide insights or possible reasons for price changes, such as market trends, company news, or external factors.
+        If complex data processing or additional calculations are required, delegate the task to the Python Data Analyst before finalizing your report."
+  expected_output: >
+    """
+        An analysis report detailing the stock's trends, key technical indicators (e.g., moving averages, RSI, PE, Volume), and any recommendations.A report summarizing the stock price trends and significant movements for {ticker}
+        over the past {information_range} from {analysis_date}, with insights into possible reasons for the movements.
+    """
+
+# Task 3: Fetch stock news
+task3:
+  description: >
+        """
+        Your task is to find the latest news related to the stock ticker {ticker} over the past {information_range} from {analysis_date}. 
+        The news should cover major events, such as earnings reports, CEO statements, major market movements, 
+        or significant events that could have affected the stock's price. You should check reliable sources such as 
+        Bloomberg, Reuters, or Yahoo Finance for this information. Provide a summary of at least 3 major news items, 
+        including the headline and a short explanation of how each piece of news may have influenced the stock price.
+        If data summarization or trend identification requires additional processing, delegate to the Python Data Analyst.
+        """
+  expected_output: >
+        """
+        A summary of at least 3 major news items related to {ticker} over the past {information_range} from {analysis_date},
+        including the headline and an explanation of how each news item may have influenced the stock's price.
+        """
+
+# Task 4: Data analysis using Python
+task4:
+  description: >
+        """
+        Using Python, you need to calculate the average stock price for {ticker} over the past {information_range} from {analysis_date} 
+        from the data provided by the previous agent. Perform the following tasks: 
+        1. Calculate the average price (mean of opening, closing, highest, and lowest prices).
+        2. Identify any anomalies in the data, such as unusually high or low prices.
+        3. Compare the average price to historical averages for the stock (if data is available).
+        4. Format your analysis into a Python-generated report and pass it to the next agent.
+        This task is specifically handled by the Python Data Analyst.
+        """
+  expected_output: >
+        """
+        A Python-generated report that contains:. The average stock price for {ticker} over the past {information_range} from {analysis_date}, 
+        Any anomalies identified, . A comparison to historical averages."
+        """
+
+# Task 5: Publish final report
+task5:
+  description: >
+        """
+        Your task is to compile all the findings (stock data, analysis, and news) into a comprehensive report for {ticker} 
+        over the past {information_range} from {analysis_date}. The report should include the following sections: 
+        1. Stock Price Data: A table of the stock's opening, closing, highest, lowest prices, and volume.
+        2. Stock Analysis: A summary of trends, price movements, and possible reasons for these movements.
+        3. News Summary: A breakdown of the key news events that occurred during the {information_range} period and how they may have impacted the stock.
+        4. Python Analysis: The average stock price, anomalies, and historical comparisons.
+        If additional data analysis is required during report compilation, delegate to the Python Data Analyst for assistance.
+        The final report should be well-organized, formatted, and ready for publication. Ensure that all data is presented clearly."
+        """
+  expected_output: >
+        """
+        A comprehensive report for {ticker} over the past {information_range} from {analysis_date}, including stock data, analysis, news, and Python-generated insights.
+        """
