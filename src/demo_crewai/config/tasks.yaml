@@ -1,0 +1,22 @@
+getStockPrice_task:
+  description: >
+    Analyze the stock {ticket} stock create a detailed report.
+
+  expected_output: >
+    Your analysis should cover the following aspects: 
+        1. Identify any significant price movements (e.g., large price increases or decreases).
+        2. Analyze the overall trend of the stock during this period.
+        3. Compare the stock's performance over this range to prior performance if available.
+        4. Provide insights or possible reasons for price changes, such as market trends, company news, or external factors
+        5. Predict the future stock price based on the analysis.
+  agent: stockPriceAnalyst
+
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: reporting_analyst
